@@ -64,6 +64,12 @@ class LoginActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         // [END initialize_auth]
+        var inv= findViewById<Button>(R.id.Btn_Invitado)
+        inv.setOnClickListener{
+            val intent = Intent(this, Invitado::class.java)
+            startActivity(intent)
+        }
+
     }
 
     // [START on_start_check_user]
