@@ -24,7 +24,7 @@
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="102dp" />
+                android:layout_height="68dp" />
 
             <TextView
                 android:id="@+id/textView"
@@ -32,12 +32,22 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="Proyecto de Aerotermia"
-                android:textSize="24sp" />
+                android:text="ThermaFlow"
+                android:textSize="34sp"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="336dp" />
+                android:layout_height="26dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="336dp"
+                app:srcCompat="@drawable/aerotermia_logo" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="37dp" />
 
             <Button
                 android:id="@+id/Btn_signin"
