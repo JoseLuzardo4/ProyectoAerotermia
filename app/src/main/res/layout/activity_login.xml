@@ -17,10 +17,12 @@
         <LinearLayout
             android:layout_width="407dp"
             android:layout_height="727dp"
+            android:layout_marginTop="1dp"
+            android:contentDescription="@string/logo"
             android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="1dp"
-            tools:ignore="MissingConstraints">
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck">
 
             <Space
                 android:layout_width="match_parent"
@@ -32,17 +34,19 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:text="ThermaFlow"
+                android:text="@string/thermaflow"
                 android:textSize="34sp"
                 android:textStyle="bold" />
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="26dp" />
+                android:layout_height="26dp"
+                android:contentDescription="@string/space" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="336dp"
+                android:contentDescription="@string/logo"
                 app:srcCompat="@drawable/aerotermia_logo" />
 
             <Space
@@ -54,7 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Iniciar sesión con Google" />
+                android:text="@string/iniciar_google" />
 
             <Space
                 android:layout_width="match_parent"
@@ -65,7 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Iniciar sesiòn como Invitado" />
+                android:text="@string/iniciar_invitado" />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

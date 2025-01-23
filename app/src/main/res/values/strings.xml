@@ -52,4 +52,9 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="thermaflow">ThermaFlow</string>
+    <string name="logo">Logo</string>
+    <string name="space">space</string>
+    <string name="iniciar_invitado">Iniciar sesión como invitado</string>
+    <string name="iniciar_google">Iniciar sesión con Google</string>
 </resources>
