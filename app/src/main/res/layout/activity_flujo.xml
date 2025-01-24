@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sensor2">
+    tools:context=".SensorFlujo">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,24 +17,24 @@
             android:layout_height="57dp" />
 
         <TextView
-            android:id="@+id/txt_Temp2"
+            android:id="@+id/txt_Flujo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Temperatura del sensor 2"
+            android:text="Velocidad de flujo del sistema"
             android:textSize="24sp" />
 
         <com.github.anastr.speedviewlib.SpeedView
-            android:id="@+id/termopar2"
+            android:id="@+id/termoparFlujo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="50dp"
             android:gravity="center"
-            app:sv_minSpeed="15"
-            app:sv_maxSpeed="40"
+            app:sv_minSpeed="0"
+            app:sv_maxSpeed="15"
             app:sv_withIndicatorLight="true"
             app:sv_indicatorLightColor="#BB0000FF"
-            app:sv_unit="ºC" />
+            app:sv_unit="m/s" />
 
 
     </LinearLayout>

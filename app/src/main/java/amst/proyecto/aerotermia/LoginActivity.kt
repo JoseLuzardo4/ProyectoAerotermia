@@ -16,9 +16,9 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
-import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.auth.auth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 class LoginActivity : AppCompatActivity() {
 
@@ -39,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
             insets
         }
 
-        val btnSignin  = findViewById<Button>(R.id.Btn_signin)
+        val btnSignin = findViewById<Button>(R.id.Btn_signin)
         btnSignin.setOnClickListener { view: View? ->
             Toast.makeText(this, "Logging In", Toast.LENGTH_SHORT).show()
             signIn()
@@ -52,24 +52,19 @@ class LoginActivity : AppCompatActivity() {
             .requestEmail()
             .build()
 
-
-
-
-
         googleSignInClient = GoogleSignIn.getClient(this, gso)
         // [END config_signin]
 
         // [START initialize_auth]
         // Initialize Firebase Auth
         auth = Firebase.auth
-
         // [END initialize_auth]
-        var inv= findViewById<Button>(R.id.Btn_Invitado)
-        inv.setOnClickListener{
+
+        val inv = findViewById<Button>(R.id.Btn_Invitado)
+        inv.setOnClickListener {
             val intent = Intent(this, Invitado::class.java)
             startActivity(intent)
         }
-
     }
 
     // [START on_start_check_user]
@@ -77,10 +72,9 @@ class LoginActivity : AppCompatActivity() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = auth.currentUser
-        if (currentUser!= null){
+        if (currentUser != null) {
             updateUI(currentUser)
         }
-
     }
     // [END on_start_check_user]
 
@@ -118,7 +112,6 @@ class LoginActivity : AppCompatActivity() {
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "signInWithCredential:failure", task.exception)
-
                 }
             }
     }
@@ -132,7 +125,7 @@ class LoginActivity : AppCompatActivity() {
     // [END signin]
 
     private fun updateUI(user: FirebaseUser?) {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, Usuario::class.java)  // Change here to redirect to Usuario
         startActivity(intent)
     }
 
@@ -140,7 +133,4 @@ class LoginActivity : AppCompatActivity() {
         private const val TAG = "GoogleActivity"
         private const val RC_SIGN_IN = 9001
     }
-
-
 }
-

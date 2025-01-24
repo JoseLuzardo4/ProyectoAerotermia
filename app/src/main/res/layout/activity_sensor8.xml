@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sensor2">
+    tools:context=".Sensor8">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,15 +17,15 @@
             android:layout_height="57dp" />
 
         <TextView
-            android:id="@+id/txt_Temp2"
+            android:id="@+id/txt_Temp8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Temperatura del sensor 2"
+            android:text="Temperatura del sensor 8"
             android:textSize="24sp" />
 
         <com.github.anastr.speedviewlib.SpeedView
-            android:id="@+id/termopar2"
+            android:id="@+id/termopar8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="50dp"

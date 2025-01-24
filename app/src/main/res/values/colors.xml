@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorSensor1">#FF1200</color> <!-- Red -->
+    <color name="colorSensor2">#E91E63</color> <!-- Pink -->
+    <color name="colorSensor3">#9C27B0</color> <!-- Purple -->
+    <color name="colorSensor4">#673AB7</color> <!-- Deep Purple -->
+    <color name="colorSensor5">#3F51B5</color> <!-- Indigo -->
+    <color name="colorSensor6">#00520C</color> <!-- Blue -->
+    <color name="colorSensor7">#BD4B00</color> <!-- Light Blue -->
+    <color name="colorSensor8">#13535B</color> <!-- Cyan -->
+    <color name="colorSensorFlujo">#009688</color> <!-- Teal -->
 </resources>

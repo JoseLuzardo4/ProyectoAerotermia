@@ -27,7 +27,7 @@
             android:textStyle="bold|italic" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/sensor1"
+            android:id="@+id/sensor1_usuario"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
@@ -46,7 +46,7 @@
             tools:ignore="VisualLintButtonSize" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/sensor2"
+            android:id="@+id/sensor2_usuario"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
@@ -64,7 +64,7 @@
             app:iconSize="30dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/sensor3"
+            android:id="@+id/sensor3_usuario"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
@@ -82,7 +82,7 @@
             app:iconSize="30dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/sensor4"
+            android:id="@+id/sensor4_usuario"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
@@ -100,7 +100,7 @@
             app:iconSize="30dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/sensor5"
+            android:id="@+id/sensor5_usuario"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
@@ -118,7 +118,7 @@
             app:iconSize="30dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/sensor6"
+            android:id="@+id/sensor6_usuario"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
@@ -136,7 +136,7 @@
             app:iconSize="30dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/sensor7"
+            android:id="@+id/sensor7_usuario"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
@@ -154,7 +154,7 @@
             app:iconSize="30dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/sensor8"
+            android:id="@+id/sensor8_usuario"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
@@ -172,7 +172,7 @@
             app:iconSize="30dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/sensorFlujo"
+            android:id="@+id/sensorFlujo_usuario"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_gravity="center_horizontal"
@@ -188,6 +188,38 @@
             app:icon="@drawable/sensor_temp"
             app:iconGravity="textStart"
             app:iconSize="30dp" />
+
+        <TextView
+            android:id="@+id/txt_ControlarFlujo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="Controlar flujo:"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/switch_FlujoAlto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:text="Flujo Alto" />
+
+            <Switch
+                android:id="@+id/switch_FlujoBajo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:text="Flujo Bajo" />
+        </LinearLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

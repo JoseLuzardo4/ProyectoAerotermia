@@ -7,4 +7,35 @@
     android:layout_height="match_parent"
     tools:context=".Sensor3">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="57dp" />
+
+        <TextView
+            android:id="@+id/txt_Temp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Temperatura del sensor 3"
+            android:textSize="24sp" />
+
+        <com.github.anastr.speedviewlib.SpeedView
+            android:id="@+id/termopar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:gravity="center"
+            app:sv_minSpeed="15"
+            app:sv_maxSpeed="40"
+            app:sv_withIndicatorLight="true"
+            app:sv_indicatorLightColor="#BB0000FF"
+            app:sv_unit="ºC" />
+
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
